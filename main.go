@@ -160,7 +160,7 @@ func gitOperations(branchName, targetDir string) error {
 	// Create PR
 	if err := runCommand("gh", "pr", "create",
 		"--title", branchName,
-		"--body", "New finding! 🙂🐧"); err != nil {
+		"--body", "New finding! 🙂🦉"); err != nil {
 		return fmt.Errorf("failed to create PR: %v", err)
 	}
 

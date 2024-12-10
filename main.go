@@ -200,8 +200,8 @@ func gitOperations(branchName, targetDir string) error {
 func main() {
 	// define flags 🚩
 	searchDir := flag.String("search", "", "directory to search for files (required)")
-	targetDir := flag.String("target", ".", "target directory (defaults to current directory)")
-	branchName := flag.String("branch", "", "branch name (optional, will be generated from filename if not provided)")
+	targetDir := flag.String("target", ".", "target directory (optional)")
+	branchName := flag.String("branch", "", "branch name (optional) (default <selected file name>)")
 
 	flag.Parse()
 
